@@ -1,0 +1,134 @@
+#lambda task
+#1.max of 3 num
+a=lambda x,y,z:max(x,y,z)
+x=int(input("Enter a num:"))
+y=int(input("Enter a num:"))
+z=int(input("Enter a num:"))
+print(max(x,y,z))
+
+#2.even or odd
+a=lambda x:x%2==0
+n=int(input("Enter a num:"))
+b=a(n)
+print(b)
+if b==True:
+    print("It is even")
+else:
+    print("It is odd")
+
+#3.div by 5
+a=lambda x:"It is div by 5" if x%5==0 else "Not div by 5"
+n=int(input("Enter a num:"))
+print(a(n))
+
+#4.square and cube
+a=lambda x:x**2
+n=int(input("Enter a num:"))
+print("The square value is:",a(n))
+b=lambda x:x**3
+print("The cube value is:",b(n))
+
+
+#5.last digit
+a=lambda x:x%10
+b=int(input("Enter a  num:"))
+print("The last digit is:",a(b))
+
+#6.positive or negative
+a=lambda x:"Positive" if x>=0 else "Negative"
+n=int(input("Enter a num:"))
+print(a(n))
+
+#7.pass or fail
+a=lambda x:"PASS" if x>=40 else "FAIL"
+n=int(input("Enter a num:"))
+print(a(n))
+
+
+#8.multiply 3 num
+a=lambda x,y,z:x*y*z
+x=int(input("Enter a num:"))
+y=int(input("Enter a num:"))
+z=int(input("Enter a num:"))
+print(a(x,y,z))
+
+#9.string length
+a=lambda x:len(x)
+b=input("Enter a string:")
+print(a(b))
+
+#10.temperature conversion
+a=lambda x:(x*1.8)+32
+n=int(input("Enter the temperature in celsius:"))
+b=a(n)
+print("Temperature in fahrenhit:",round(b,1))
+
+#MAPPING
+#1.square
+a=[1,2,3]
+square=list(map(lambda x:x**2,a))
+print("square:",square)
+
+#2.double
+a=[2,4,6]
+double=list(map(lambda x:x*2,a))
+print("Double:",double)
+
+#3.add 1
+a=[5,6,7]
+add=list(map(lambda x:x+1,a))
+print("After adding 1:",add)
+
+#4.convert to string
+a=[1,2,3]
+b=list(map(lambda x:str(x),a))
+print("The string is:",b)
+
+#5.cube
+a=[1,2,3]
+b=list(map(lambda x:x**3,a))
+print("cube values:",b)
+
+#6.uppercase
+a=["a","b","c"]
+b=list(map(lambda x:x.upper(),a))
+print(a(b))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
