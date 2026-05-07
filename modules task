@@ -1,0 +1,60 @@
+1.math module
+import math
+a=int(input("Enter a num to find square root:"))
+print("The square root of the number is:",math.sqrt(a))
+a=int(input("Enter a num:"))
+b=int(input("Enter a num:"))
+print("The num raised to its power is:",math.pow(a,b))
+print("The value of pi",math.pi)
+a=float(input("Enter a num:"))
+print("Ceil value:",math.ceil(a))
+print("Floor value:",math.floor(a))
+a=int(input("Enter a num to find factorial:"))
+print("The factorial is:",math.factorial(a))
+
+#2.unit conversion
+import scipy.constants as s
+a=int(input("Enter the grams:"))
+print(a,"gram=",a*s.gram,"Kilogram")
+a=int(input("Enter the hour:"))
+b=a*s.minute
+print(f"{a}hours={b}minutes")
+a=int(input("Enter the min:"))
+b=a*s.minute
+print(f"{a}minutes={b}seconds")
+a=int(input("Enter the kilogram:"))
+b=a*s.gram
+print(f"{a}kilogram={b}grams")
+a=int(input("Enter the  hour:"))
+b=a*s.hour
+print(f"{a}hours={b}seconds")
+
+#3.time module
+import time as t
+print("current time:",t.strftime("%H:%M:%S"))
+print("sleep the programm for 3 sec...")
+t.sleep(3)
+print("I'm awake")
+print("Time in readable format",t.ctime())
+print("Only hours:",t.strftime("%H"))
+print("Only minutes:",t.strftime("%M"))
+print("Only seconds:",t.strftime("%S"))
+
+#4.Datetime module
+import datetime as dt
+d=dt.datetime.now()
+print("Today date",d.strftime("%d:%m:%y"))
+print("current date and time:",dt.datetime.now())
+print("Current year:",d.strftime("%y"))
+print("Current month:",d.strftime("%B"))
+print("current day:",d.strftime("%d"))
+
+#5.calendar
+import calendar as cc
+print("calendar of may\n",cc.month(2026,5))
+print("calendar of the year:\n",cc.calendar(2026))
+a=int(input("Enter the year:"))
+print(f"{a}is leap year:{cc.isleap(a)}")
+a=int(input("Enter the month:"))
+print(cc.monthrange(2026,a)[1])
+print("Week of a given date:",cc.weekday(2026,5,7))
