@@ -1,4 +1,4 @@
-1.math module
+#1.math module
 import math
 a=int(input("Enter a num to find square root:"))
 print("The square root of the number is:",math.sqrt(a))
@@ -58,3 +58,28 @@ print(f"{a}is leap year:{cc.isleap(a)}")
 a=int(input("Enter the month:"))
 print(cc.monthrange(2026,a)[1])
 print("Week of a given date:",cc.weekday(2026,5,7))
+
+#6.random module
+import random as rr
+print("Generating random num within 1 to 10 :",rr.randrange(1,10))
+print("Generatig rnadom num form 1 to 100:",rr.randrange(1,100))
+a=[1,2,3,4,5]
+print(rr.choices(a))
+print("Generate a random float num:",rr.random())'''
+
+#7.phywhatkit
+import pywhatkit as pk
+a=input("Enter what you want to search:")
+print("Searching in google...")
+pk.search(a)
+print("Searching in youtube....")
+pk.playonyt(a)
+print("Sending a whatsapp message...")
+pk.sendwhatmsg("+919750553536","Hi! How it's going?",18,31)
+a=input("Enter the topic:")
+print("Presenting a summary...\n")
+pk.info(a,lines=4)
+
+
+
+
