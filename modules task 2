@@ -1,0 +1,46 @@
+#1.numpy
+import numpy as n
+a=n.array([1,2,3,4])
+print("Your array:",a)
+print("Sum:",n.sum(a))
+print("Max:",n.max(a))
+print("multiply by 2:",n.multiply(a,2))
+print("array of zeros:",n.zeros(5))
+
+#2.PIL
+import PIL
+from PIL import Image
+import time
+print("opening an image...")
+i=Image.open(r"F:\Iyyappan E 2021.jpg")
+i.show()
+print("Process finished...")
+time.sleep(3)
+print("converting to greyscale ...")
+i=i.convert('L')
+i.show()
+print("Resize an image...")
+i=i.resize((200,200))
+i.show()
+print("Saving the image...")
+i=i.save("F:\Iyyappan E 2021.jpg")'''
+
+#3.webbrowser
+import webbrowser as wb
+import time
+print("Opening google...")
+wb.open("https:\\google.com")
+time.sleep(3)
+print("Opening youtube...")
+wb.open("https:\\youtube.com")
+time.sleep(3)
+q=input("Enter the topic to search:")
+url=f"https:\\google.com\search?q={q}"
+wb.open(url)
+w=wb.get("chrome")
+w.open("https:\\github.com")
+s=["https:\\google.com","https:\\youtube.com","https:\\github.com"]
+for i in s:
+    wb.open(i)
+    time.sleep(10)
+
